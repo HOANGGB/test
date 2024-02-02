@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="angular-route.js"></script>
+</head>
+<body ng-app="appdemo">
+    <a href="#/1">click</a>
+    <h2>ABCH</h2>
+    <h3>gdxxxyxyyutzzzz</h3>
+    <div ng-view>
+        có
+    </div>
+    <script>
+        var app = angular.module("appdemo",["ngRoute"]);
+        app.config(function($routeProvider){
+            $routeProvider 
+            .when("/1",{
+                templateUrl: "demo.html"
+            })
+        });
+    </script>
+</body>
+</html>
